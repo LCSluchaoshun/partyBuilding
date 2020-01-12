@@ -1,0 +1,212 @@
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.gonggao_content{
+		width: 1050px;
+		height: 100%;
+		margin: 0 auto;
+		box-sizing: border-box;
+		/*border:1px solid red;*/
+
+	}
+	.gonggao_left{
+		width: 70%;
+		height: 600px;
+		box-sizing: border-box;
+		border:1px solid red;
+		float: left;
+		clear: both;
+		position: relative;
+	}
+	.gonggao_left:after{
+		content: "";
+		width: 50%;
+		height: 100%;
+		display: block;
+		background:url("../images/鸽子.png") no-repeat;
+		background-size: 100%;
+		position: absolute;
+		top: 0;
+		z-index: -100;
+	}
+	.gonggao_right{
+		height: 600px;
+		width: 28%;
+		box-sizing: border-box;
+		/*border:1px solid green;*/
+		float: right;
+	}
+	.gonggao_left p{
+		color: #FFF;
+		font-size: 20px;
+		line-height:50px;
+		background: url("../images/tongzhibg.png") no-repeat;
+		background-position:-40px -56px;
+		background-size:45%;
+		background-repeat: no-repeat;
+		text-indent: 5rem;
+		font-weight:300px;
+		border-bottom: 1px solid #e60000;
+
+	}
+	/*通知公告列表开始*/	
+	.recommended ul,
+	.hot ul,
+	.gonggao_left ul
+	{
+		/*margin:0;*/
+		padding-left: 10px ;
+	}
+	.recommended ul li a,
+	.hot ul li a,
+	.gonggao_left ul li a
+	{
+		text-decoration: none !important;
+		color:inherit;
+	}
+	
+	.gonggao_left>ul li
+	{
+		height: 43px;
+		line-height: 43px;
+		border-bottom: 1px dotted #b1b1b2;
+		width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		text-indent: 1.5rem;
+		background:url(../images/xinwen.svg) no-repeat;
+		background-size:15px;
+		background-position: 5px 15px; 
+	}
+	.recommended ul li:hover,
+	.hot ul li:hover,
+	.gonggao_left ul li:hover
+	{
+		color:#e60000;
+		background-color: #FAFAFA;
+	}
+	.gonggao_left>ul li a{
+		/*border:1px solid red;*/
+		display: inline-block;
+		width: 80%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		text-indent: 0rem;
+	}
+	/*通知公告时间*/
+	.gonggao_left ul li span.gonggao_left_time{
+		float: right;
+		margin-right: 10px;
+		color: black;
+		padding-left: -20px;
+		text-indent: 0rem;
+		font-size: 14px;
+	}
+
+	/*通知公告列表结束*/
+
+
+	/*推荐要闻，热点要闻开始*/
+	.recommended{
+		height: 300px;
+		/*border:1px solid red;*/
+		/*margin-bottom:10px;*/
+	}
+	.hot{
+		height: 300px;
+		/*border:1px solid red;*/
+
+	}
+	/*干部人事*/
+	.recommended p.gengduo
+	{
+		color: red;
+		font-size:14px;
+		float: right;
+		line-height: 40px;
+		margin-right: 0.5rem;
+		cursor: pointer;
+	}
+	.recommended p.gengduo:hover
+	{
+		color: #e60000;
+	}
+	.recommended p,
+	.hot p{
+		border-bottom: 2px solid #CCCCCC;
+		margin-left:82px;
+		height:42px;
+	}
+	.recommended  span,
+	.hot span{
+		display:block;
+		float: left;
+		font-size: 16px;
+		color: #e60000;
+		border-bottom: 2px solid #e60000;
+		padding: 8px;
+		margin-right: 2px;
+		font-weight: 550;
+
+	}
+	
+	.recommended ul li,
+	.hot ul li
+	{
+		
+		border-bottom: 1px dotted #b1b1b2;
+		width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		text-indent: 1.5rem;
+		background-size:15px;
+		background-position: 5px 15px; 
+		font-size: 16px;
+		line-height: 35px;
+		height: 35px;
+		position: relative;
+		/*list-style-type:disc ! important;*/
+	}
+		.recommended ul li:after,
+	.hot ul li:after
+	{
+		content: "";
+		width: 4px;
+		height: 4px;
+		border:2px solid #b1b1b2;
+		box-sizing: border-box;
+		position: absolute;
+		left: 10px;
+		top: 17px;
+	}
+/*推荐要闻，热点要闻结束*/
+
+/*新闻列表分页部分*/
+.gonggao_left .newliebiao_pag{
+	margin:0 auto;
+	width: 100%;
+	height:50px;
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	text-align: center;
+
+}
+ .gonggao_left .newliebiao_pag .navigation2{
+	display: inline-block;
+	border: none;
+}
+
+.gonggao_left .newliebiao_pag .page-link{
+	border: none;
+	background-color:  rgba( 0,0,0,0) ! important;
+	font-size: 25px;
+
+} 
+ .gonggao_left .active .page-link{
+	color: #FD070C !important;
+}

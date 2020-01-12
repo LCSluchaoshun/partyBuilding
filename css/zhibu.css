@@ -1,0 +1,268 @@
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.zhibu_content{
+		width: 1050px;
+		height: 100%;
+		margin: 0 auto;
+		box-sizing: border-box;
+		/*border:1px solid red;*/
+	}
+	/*解决父元素高度塌陷*/
+	.zhibu_content:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.zhibu_left{
+		width:100%;
+		float: left;
+		/*border: 1px solid green;*/
+		box-sizing: border-box;
+
+
+	}
+	.zhibu_left:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	.zhibu_leftLB{
+		width: 100%;
+		height: 460px;
+		/*border: 1px solid red;*/
+		box-sizing: border-box;
+		background:url(../images/zhibuLB11.png);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		position: relative;
+	}
+
+	.zbfcimg img{
+		width: 100%;
+		margin-bottom:5px;
+		margin-top:-15px;
+	}
+	/*支部新闻开始*/
+	.zhibu_leftnews{
+		width: 100%;
+		/*border: 1px solid yellow;*/
+		box-sizing: border-box;
+		/*padding-left: 15px; */
+		margin-top: 10px;
+	}
+	.zhibu_leftnews>ul {
+		list-style: none;
+		padding: 0;
+		margin:0;
+	}
+	.zhibu_leftnews>ul>li{
+		display: inline-block;
+		width: 49.5%;
+		/*border: 1px solid yellow;*/
+		margin:0; 
+		margin-bottom: 20px;
+	}
+	.zhibu_leftnews>ul>li:nth-child(even){
+		float: right;
+	}
+	/*支部新闻结束*/
+
+
+	/*轮播图开始*/
+	.carousel{
+		width: 775px;
+		height: 397px;
+		border-radius: 23px;
+		/*border: 1px solid red;*/
+		overflow:hidden;   /*隐藏圆角*/
+		position: absolute;
+		top: 35px;
+		left:83px;
+		/*box-shadow: 4px 4px 2px #4c4c4c  ;#D43E0A*/
+		text-align: center;
+		
+
+	}
+	
+
+	.zhibu_leftLB .carousel-caption{
+		padding: 0;
+		width:inherit;
+		height: 35px;
+		margin-bottom: 10px;
+		position: absolute;
+		left: 0px;
+		background: rgba(0, 0, 0, .4);
+		/*border:1px solid red;*/
+	}
+	.zhibu_leftLB .carousel-caption h3{
+		font-size: 18px;
+		line-height: 35px;
+	}
+	/*轮播图结束*/
+
+	.carousel-indicators li{
+		top:10px;
+	}
+	/*党员定位*/
+	.zhibu_title .zhibu_LBtitle3{
+		width: 10px;
+		font-size: 23px;
+		color: #FFF;
+		/*border: 1px solid red;*/
+		position: absolute;
+		left:63px;
+		top: 119px;
+		font-weight: bold;
+		text-shadow:5px 2px 1px #4C4C4C;
+		
+	}
+	/*.zhibu_title .zhibu_LBtitle4{
+			width: 10px;
+		font-size: 23px;
+		color: #FFF;
+		border: 1px solid red;
+		position: absolute;
+		left:78px;
+		top: 170px;
+		font-weight: 700;
+		text-shadow:5px 2px 1px #4C4C4C;
+		
+	}*/
+	
+	/*支部风采轮播文字*/
+	.zhibu_leftLB .zhibu_LBtitle{
+		width: 10px;
+		font-size: 23px;
+		color: #FFF;
+		/*border: 1px solid red;*/
+		position: absolute;
+		right: 77px;
+		top: 119px;
+		font-weight: bold;
+		text-shadow:5px 2px 1px #4C4C4C;
+		
+	}
+	.zhibu_leftLB .zhibu_LBtitle2{
+		width: 10px;
+		font-size: 23px;
+		color: #FFF;
+		/*border: 1px solid red;*/
+		position: absolute;
+		right: 91px;
+		top: 170px;
+		font-weight: 700;
+		text-shadow:5px 2px 1px #4C4C4C;
+	}
+	
+	.newbox{
+		width:100%;
+		height: 250px;
+		border: 1px solid #d8d8d8;
+		border-top-right-radius: 5px;
+		border-top: none;
+		overflow-y: hidden;
+	}
+
+	.newbox ul
+	{
+   	padding: 0 10px ;
+	}
+
+	
+	.newbox ul li
+	{
+    height: 31px;
+    line-height: 31px;
+    font-size: 15px;
+    border-bottom: 1px dotted #b1b1b2;
+    width: 100%;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-indent: 1.5rem;
+	background:url(../images/xinwen.svg) no-repeat;
+	background-size:3%;
+	background-position: 0; 
+	}
+	.newbox ul li a  /*   领导讲话，公司文件图标设置*/
+	{
+		text-decoration: none !important;
+		color:inherit;
+		display: inline-block;
+		width: 80%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		text-indent: 0rem;
+
+	}
+
+	.newbox ul li:hover
+	{
+   	color:#e60000;
+   	background-color: #FAFAFA;
+	}
+	.legNewIconbg p
+	{
+		color: #fff;
+		font-size:15px;
+		float: left;
+		line-height: 40px;
+		/*margin-left: 0.5rem;*/
+		
+
+	}
+	.legNewIconbg p.gengduo
+	{
+		color: #717070;
+		font-size:14px;
+		float: right;
+		line-height: 40px;
+		margin-right: 0.5rem;
+		cursor: pointer;
+	}
+	.legNewIconbg p.gengduo:hover
+	{
+		color: #e60000;
+	}
+	/*背景设置*/
+	.legNewIconbg{
+		height: 40px;
+		background:url(../images/newtopbg.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		/*border-bottom:0.1px solid #CACACA;*/
+	}
+	/*图标设置*/
+	.legNewIconbg img{
+		height: 60px;
+		margin: 0;
+		line-height: 40px;
+		margin-top: -7.5px;
+		margin-left: 10px;
+		float: left;
+	}
+	.legNewIconbg img.wenjian{
+		margin-top: 10px;	
+	}
+	.newbox ul li{
+	/*background:url(../images/wenjian2.svg)no-repeat;*/
+	
+
+	}
+
+		/*支部新闻时间*/
+	.newbox ul li span.zhibunew_time{
+		float: right;
+		margin-right: 10px;
+		color: black;
+		padding-left: -20px;
+		text-indent: 0rem;
+		font-size: 12px;
+		/*border: 1px solid red;*/
+	}
+/*新闻 领导讲话 公司文件结束*/

@@ -1,0 +1,36 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.news{
+	width: 1050px;
+	/*border:1px solid red;*/
+	box-sizing: border-box;
+	height: 100%;
+	margin: 0 auto;
+}
+.news_title{
+	text-align: center;
+}
+.news>p{
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+
+}
+.news>p>span{
+	/*float: right;*/
+	font-size: 12px;
+	margin-left: 10px;
+}
+.news .span_time{
+	margin-right: 30px;
+}
+
+.news_article{
+	padding: 5px 20px;
+}
+.news_article >p{
+	margin:0;
+	text-indent: 2rem;
+	margin-bottom: 1rem;
+}

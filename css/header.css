@@ -1,0 +1,103 @@
+
+		.header{
+		width: 1050px;
+		/*height: 100px;*/
+		background-color: #EEE;
+		margin: 0 auto;
+	}
+	/*菜单导航开始*/
+	.nav{
+		/*border: 1px solid green;*/
+		box-sizing: border-box;
+		background-color: #E50112;
+		padding:10px 10px;
+		width: 1050px;
+		margin:0 auto;
+	}
+	.nav .nav-item{
+		/*border: 1px solid green;*/
+		box-sizing: border-box;
+		/*margin-right:10px;*/
+		font-size: 18px;
+		width: 114px;
+		text-align: center;
+	}
+		.nav .nav-item:last-child{
+		
+		margin-right:0;
+
+	}
+	.nav .nav-item a{
+		color: #FFF;
+	}
+	.nav .nav-link{
+		padding: .5rem 1rem;
+
+	}
+	.nav-item .active{
+		background:#900;
+	}
+	.nav .nav-item:hover a.nav-link{
+		background:#900;
+		border-radius: 5px;
+		font-weight: bold;
+
+	}
+	.nav ul.nav-item{
+		padding-left: 0;
+	}
+
+	/*党员学习*/
+	li.dangyuanxuexi{
+		position:relative;
+		/*border:1px solid black;*/
+	}
+	li.dangyuanxuexi ul{
+		/*border:1px solid black;*/
+		list-style: none;
+		padding: 0;
+		float: right;
+		position: absolute;
+		display: none;
+		width: inherit;
+		background-color: #E50112;
+		z-index: 99;
+	}
+	.xuexi_ul .xuexi_li{
+		/*border:1px solid black;*/
+		width: inherit;
+	}
+	.xuexi_ul .xuexi_li a{
+		text-decoration: none;
+		display: inline-block;
+		width: inherit;
+		height: inherit;
+	}
+	.xuexi_ul .xuexi_li:hover a{
+		background-color: #900;
+	}
+
+
+/*菜单导航结束*/
+
+/*面包屑开始*/
+	.breadcrumb{
+		padding: 0.1rem;
+		width: 1050px;
+		margin: 0 auto;
+		/*background-color: #e60000;*/
+		border-radius: 0px;
+
+	}
+	.breadcrumb-item{
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.breadcrumb-p{
+		float: left;
+		font-size: 13px;
+		margin-right: 20px;
+		padding-left: 1rem;
+
+	}
+/*面包屑结束*/
